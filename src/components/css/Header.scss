@@ -1,0 +1,143 @@
+//variables
+$white: #FFFFFF;
+$orange: #f0a055;
+
+#banner {
+    height: 100vh;
+    width: 100%;
+    background-color: #252a30;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+    @media screen and (min-width: 550px) {
+        #banner {
+            background-image:url(../../assets/header-bgrd.jpg);
+        }
+    }
+
+.wrapper {
+    width: 1440px;
+    max-width: 90%;
+    margin: 0 auto;
+    
+    header {
+        padding: 2rem 0;
+    }
+
+    nav {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        align-items: center;
+        
+        a {
+        font-size: 0.85rem;
+        color: $white;
+        text-decoration: none;
+        margin-left: 2rem;
+        }
+        
+        .trans-btn {
+            background-color: rgba(250, 250, 250, 0.20);
+            border: none;
+            font-size: 0.85rem;
+            font-weight: inherit;
+            padding: .7rem 1.6rem;
+        }
+    }
+
+    .profile-pic {
+        margin-top: 2.4rem;
+        width: 90px;
+        height: auto;
+        border-radius: 50%;
+        z-index: 2;
+    }
+
+    h1, span {
+        color: $white;
+        font-size: 2.8rem;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: -.1rem;
+    }
+    .btn-wrapper{
+        margin-top: 2.4rem;
+    }
+    
+    .hero-btn {
+        display: inline-block;
+        padding: 1rem 2.2rem;
+        font-size: 1.2rem;
+        border: 2px solid $orange;
+        border-radius: 50px;
+        height: auto;
+        background-color: transparent;
+        color: $white;
+        font-size: 0.85rem;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    .scroll-down {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+    }
+    
+    .arrow {
+        color: $white;
+    }
+    
+    /* animation for to bounce down arrow */
+    .bounce {
+        display: inline-block;
+        position: relative;
+        -moz-animation: bounce 0.5s infinite linear;
+        -o-animation: bounce 0.5s infinite linear;
+        -webkit-animation: bounce 0.5s infinite linear;
+        animation: bounce 0.5s infinite linear;
+      }  
+    
+        @-webkit-keyframes bounce {
+            0% { top: 0; }
+            50% { top: -0.2em; }
+            70% { top: -0.3em; }
+            100% { top: 0; }
+        }
+        @-moz-keyframes bounce {
+            0% { top: 0; }
+            50% { top: -0.2em; }
+            70% { top: -0.3em; }
+            100% { top: 0; }
+        }
+        @-o-keyframes bounce {
+            0% { top: 0; }
+            50% { top: -0.2em; }
+            70% { top: -0.3em; }
+            100% { top: 0; }
+        }
+        @-ms-keyframes bounce {
+            0% { top: 0; }
+            50% { top: -0.2em; }
+            70% { top: -0.3em; }
+            100% { top: 0; }
+        }
+        @keyframes bounce {
+            0% { top: 0; }
+            50% { top: -0.2em; }
+            70% { top: -0.3em; }
+            100% { top: 0; }
+        }
+
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+.projects-container {
+    width: 98%;
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: row;
+    flex-flow: row wrap;  
+    display: -webkit-box;
+    display: flex;
+}
+
+.image-container {
+    width: 100%;
+    height: auto; 
+    padding: 3px 5px;
+}
+
+.image-container .image { 
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+
+    @media screen and (min-width: 600px) {
+        .projects-container {
+            width: 100%;
+        }
+        
+        .image-container { 
+            width: 48%; 
+            height: auto; 
+            }
+        }
+
+    @media screen and (min-width: 998px) {
+        
+        .image-container { 
+        width: 28%; 
+        height: auto; 
+            }   
+        }
